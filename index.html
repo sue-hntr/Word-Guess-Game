@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Word Guess Game</title>
+
+  <!-- Bootstrap 4.0 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- This is my CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<!-- front-end HTML Starts here  -->
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item active">Star Wars "Alien" Character Word Game</li>
+        <li class="list-group-item small">
+          Use letters and numbers to guess the name of a major but non-human character. Lettercase does not matter.
+        </li>
+        <li class="list-group-item small">
+          Press any key to begin the game. You will have __ guesses until you lose and move onto a new character. </li>
+        <li class="list-group-item">
+          There are 
+            <span id="blankLetters">0</span> 
+          letters in this name. Here they are: 
+            <span id="numLetters"></span>
+        </li> 
+        <li class="list-group-item">
+            <span id="blinker">
+              Guess a letter
+            </span>
+        </li>
+        <li class="list-group-item">Wins: <span id="Wins"></span></li>
+        <li class="list-group-item">Remaining number of letter Guesses: <span id="lremain"></span></li>
+        <li class="list-group-item">Letters already guessed: <span id="lguessed"></span></li>
+    </ul>
+</div> <!--close container-->
+
+<!-- 
+Here are things I need to find out:
+how to randomly select a word out of an array (array ) and keep track that you have already used it. 
+Signal to user that they can strike any key.
+how to display the "blanks" in that word (array[1].length loop)
+how to show where the correct guess goes on that word: previous loop with blanks until reaches the letter, inserts the letter, and then continues putting in blanks until the loop ends.
+
+how to show unused letters (do I need to send a message if user repeats typing the letter?) -->
+
+
+
+
+
+
+<!-- 
+Press any key to get started!
+
+6. Wins: (# of times user guessed the word correctly).
+
+   * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
+
+   * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
+
+7. Number of Guesses Remaining: (# of guesses remaining for the user).
+
+8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
+
+9. After the user wins/loses the game should automatically choose another word and make the user play it. -->
+
+
+<!-- front-end HTML ENDS here  -->
+<!-- Bootstrap 4.0 Javascript and JQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js">></script>
+</body>
+</html>
